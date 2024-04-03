@@ -10,6 +10,7 @@ Program.cs is file app will run first!
 name "User" function -> Middleware (example: filter ip can't request to my server)
 The position of Middleware is important, if we are not consider aboout this. Application will not work like we expect.
 Regular expression: ?
+File name: "_Vie..." => public view format name file.
 ==========================================================================
 Create a new project: 
 ==========================================================================
