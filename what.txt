@@ -11,6 +11,7 @@ name "User" function -> Middleware (example: filter ip can't request to my serve
 The position of Middleware is important, if we are not consider aboout this. Application will not work like we expect.
 Regular expression: ?
 File name: "_Vie..." => public view format name file.
+HTTPS => dotnet dev-certs https --trust
 ==========================================================================
 Create a new project: 
 ==========================================================================
