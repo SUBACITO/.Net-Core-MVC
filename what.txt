@@ -1,0 +1,2 @@
+What is MVC => Model View Controller.
+Packages is needed with .Net Core, we can search in link:  
