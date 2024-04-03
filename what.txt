@@ -7,6 +7,9 @@ Linux - mac: not included UI - "dotnet clean" very useful for this case.
 .Net core vs .Net framework: 1 package has many dependencies, it will install all of it to make sure your project working!
 Model | View | Controller.
 Program.cs is file app will run first!
+name "User" function -> Middleware (example: filter ip can't request to my server)
+The position of Middleware is important, if we are not consider aboout this. Application will not work like we expect.
+Regular expression: ?
 ==========================================================================
 Create a new project: 
 ==========================================================================

@@ -23,5 +23,8 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+    //app.dev -> app.dev
+    //app.dev -> app.dev/login -> controller login action index
+    //app.dev/product/edit/1-> controller product, action edit, id = 1
 
 app.Run();
