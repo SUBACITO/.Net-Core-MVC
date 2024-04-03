@@ -3,3 +3,4 @@ Packages is needed with .Net Core, we can search in link: https://www.nuget.org/
 Kestrel help us built application with many suitable versions of desktop.
 gRPC Services: is a language agnostic, high-performance Remote Procedure Call (RPC) framework.
 Linux - mac: not included UI - "dotnet clean" very useful for this case.
+.Net core vs .Net framework: 1 package has many dependencies, it will install all of it to make sure your project working!
