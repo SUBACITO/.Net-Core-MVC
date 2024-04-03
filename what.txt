@@ -2,4 +2,4 @@ What is MVC => Model View Controller.
 Packages is needed with .Net Core, we can search in link: https://www.nuget.org/packages
 Kestrel help us built application with many suitable versions of desktop.
 gRPC Services: is a language agnostic, high-performance Remote Procedure Call (RPC) framework.
-
+Linux - mac: not included UI - "dotnet clean" very useful for this case.
