@@ -1,2 +1,2 @@
 What is MVC => Model View Controller.
-Packages is needed with .Net Core, we can search in link:  
+Packages is needed with .Net Core, we can search in link: https://www.nuget.org/packages
