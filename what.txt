@@ -15,7 +15,8 @@
 14. DataType => get type data want to return.
 15. Migration (up) => update DB, (down) => rollback DB.
 16. dotnet nuget add source "https://api.nuget.org/v3/index.json" --name "nuget.org" if not work when you meet problem with "dotnet tool install --global dotnet-aspnet-codegenerator"
-17. Dependency injection
+17. Dependency injection?
+18. Action can has the same name, but force to have unique method.
 
 
 ==========================================================================
