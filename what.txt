@@ -1,19 +1,23 @@
 ==========================================================================
-What is MVC => Model View Controller.
-Packages is needed with .Net Core, we can search in link: https://www.nuget.org/packages
-Kestrel help us built application with many suitable versions of desktop.
-gRPC Services: is a language agnostic, high-performance Remote Procedure Call (RPC) framework.
-Linux - mac: not included UI - "dotnet clean" very useful for this case.
-.Net core vs .Net framework: 1 package has many dependencies, it will install all of it to make sure your project working!
-Model | View | Controller.
-Program.cs is file app will run first!
-name "User" function -> Middleware (example: filter ip can't request to my server)
-The position of Middleware is important, if we are not consider aboout this. Application will not work like we expect.
-Regular expression: ?
-File name: "_Vie..." => public view format name file.
-HTTPS => dotnet dev-certs https --trust.
-DataType => get type data want to return.
-Migration (up) => update DB, (down) => rollback DB
+1. What is MVC => Model View Controller.
+2. Packages is needed with .Net Core, we can search in link: https://www.nuget.org/packages
+3. Kestrel help us built application with many suitable versions of desktop.
+4. gRPC Services: is a language agnostic, high-performance Remote Procedure Call (RPC) framework.
+5. Linux - mac: not included UI - "dotnet clean" very useful for this case.
+6. .Net core vs .Net framework: 1 package has many dependencies, it will install all of it to make sure your project working!
+7. Model | View | Controller.
+8. Program.cs is file app will run first!
+9. name "User" function -> Middleware (example: filter ip can't request to my server)
+10. The position of Middleware is important, if we are not consider aboout this. Application will not work like we expect.
+11. Regular expression: ?
+12. File name: "_Vie..." => public view format name file.
+13. HTTPS => dotnet dev-certs https --trust.
+14. DataType => get type data want to return.
+15. Migration (up) => update DB, (down) => rollback DB.
+16. dotnet nuget add source "https://api.nuget.org/v3/index.json" --name "nuget.org" if not work when you meet problem with "dotnet tool install --global dotnet-aspnet-codegenerator"
+17. Dependency injection
+
+
 ==========================================================================
 Create a new project: 
 ==========================================================================
