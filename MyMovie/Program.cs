@@ -6,13 +6,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 if (builder.Environment.IsDevelopment())
 {
-    builder.Services.AddDbContext<MvcMovieContext>(options =>
-        options.UseSqlite(builder.Configuration.GetConnectionString("MvcMovieContext")));
+    // builder.Services.AddDbContext<MvcMovieContext>(options =>
+    //     options.UseSqlite(builder.Configuration.GetConnectionString("MvcMovieContext")));
+     builder.Services.AddDbContext<MvcMovieContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("CacbuChaBa")));
 }
 else
 {
     builder.Services.AddDbContext<MvcMovieContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("ProductionMvcMovieContext")));
+        options.UseSqlServer(builder.Configuration.GetConnectionString("CacbuChaBa")));
 }
 
 // Add services to the container.
