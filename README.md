@@ -116,7 +116,7 @@ Now we add some new lines below ```var builder = WebApplication.CreateBuilder(ar
 if (builder.Environment.IsDevelopment())
 {
      builder.Services.AddDbContext<SchoolContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("MyTestConnection")));
+        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 }
 else
 {
@@ -127,7 +127,7 @@ else
 Open the appsettings.json file and add a connection string as shown in the following markup (i am using local, so i often use with '.'):
 ```sh
 "ConnectionStrings": {
-    "MyTestConnection": "Server=.;Database=MovieDb;Integrated Security=True;TrustServerCertificate=true"
+    "DefaultConnection": "Server=.;Database=ContosoUniversity1;Trusted_Connection=True;MultipleActiveResultSets=true"
   },
 ```
 ## Initialize DB with test data
