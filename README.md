@@ -31,5 +31,33 @@ I am working with dotnet 8.0 and using Visual studio code!
        ```
         dotnet tool install --global dotnet-aspnet-codegenerator
        ```
+  * Add Microsoft.EntityFrameworkCore.SqlServer:
+  ```sh
+  dotnet add package Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore --version 8.0.4
+   ```
+  * Add Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore:
+  ```sh
+   dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.4
+  ```
 * Create a new folder: "Model". Now we move to create some models that we need!
+<h3>The Student entity<h3>
+  
+```sh
+using System;
+using System.Collections.Generic;
+
+namespace ContosoUniversity.Models
+{
+    public class Student
+    {
+        public int ID { get; set; }
+        public string LastName { get; set; }
+        public string FirstMidName { get; set; }
+        public DateTime EnrollmentDate { get; set; }
+
+        public ICollection<Enrollment> Enrollments { get; set; }
+    }
+}
+```
+
  
