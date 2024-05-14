@@ -59,5 +59,23 @@ namespace ContosoUniversity.Models
     }
 }
 ```
+* Create the database context!
+In the project folder, create a folder named Data.
+In the Data folder create a SchoolContext class with the following code:
+```sh
+using ContosoUniversity.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace ContosoUniversity.Data
+{
+    public class SchoolContext : DbContext
+    {
+        public SchoolContext(DbContextOptions<SchoolContext> options) : base(options)
+        {
+        }
+        public DbSet<Student> Students { get; set; }
+    }
+}
+```
 
  
