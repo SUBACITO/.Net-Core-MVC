@@ -267,10 +267,10 @@ We need to update ```_Layout.cshtml``` in Shared folder. Add new tag ```li``` fo
 ```
 ## Add Migration for MVC.
 ```sh
-  dotnet ef migrations add InitialCreate
+dotnet ef migrations add InitialCreate
 ```
 ```sh
-  dotnet ef database update
+dotnet ef database update
 ```
 
 
