@@ -16,5 +16,8 @@ I am working with dotnet 8.0 and using Visual studio code!
 ## Let's go!
 * Using command line from Visual studio code to create your project
   ```sh
-   dotnet new webapp
+  dotnet new mvc -o YourNameProject
+  code -r YourNameProject
    ```
+* Create a new folder: "Model". Now we move to create some models that we need!
+ 
