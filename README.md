@@ -1,6 +1,6 @@
 <div align="center">
   <a href="...">
-    <img src="..." alt="Logo" width="80" height="80">
+    <img src="https://w7.pngwing.com/pngs/713/310/png-transparent-net-mvc-logo-asp-net-mvc-logo-net-framework-model-view-controller-framework-text-logo-microsoft-azure.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">.Net-Core MVC</h3>
