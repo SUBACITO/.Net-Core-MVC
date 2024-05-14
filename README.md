@@ -115,15 +115,15 @@ Now we add some new lines below ```var builder = WebApplication.CreateBuilder(ar
 ```sh
 if (builder.Environment.IsDevelopment())
 {
-    // builder.Services.AddDbContext<MvcMovieContext>(options =>
-    //     options.UseSqlite(builder.Configuration.GetConnectionString("MvcMovieContext")));
-     builder.Services.AddDbContext<MvcMovieContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("CacbuChaBa")));
+    // builder.Services.AddDbContext<SchoolContext>(options =>
+    //     options.UseSqlite(builder.Configuration.GetConnectionString("SchoolContext")));
+     builder.Services.AddDbContext<SchoolContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("YourConnection")));
 }
 else
 {
     builder.Services.AddDbContext<MvcMovieContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("CacbuChaBa")));
+        options.UseSqlServer(builder.Configuration.GetConnectionString("YourConnection")));
 }
 
 ```
