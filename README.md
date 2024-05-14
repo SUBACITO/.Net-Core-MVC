@@ -207,7 +207,7 @@ namespace ContosoUniversity.Controllers
     }
 }
 ```
-Then we create folder ```Students``` in folder ```Views```, and add Index.cshtml into it.
+Then we create folder ```Students``` in folder ```Views```, and add file ```Index.cshtml``` into it.
 ```sh
 @model IEnumerable<ContosoUniversity.Models.Student>
 
