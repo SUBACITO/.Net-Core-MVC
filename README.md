@@ -31,14 +31,16 @@ I am working with dotnet 8.0 and using Visual studio code!
        ```
         dotnet tool install --global dotnet-aspnet-codegenerator
        ```
-  * Add Microsoft.EntityFrameworkCore.SqlServer:
+  * Add packages:
   ```sh
-  dotnet add package Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore --version 8.0.4
+  dotnet add package Microsoft.EntityFrameworkCore.SQLite
+  dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+  dotnet add package Microsoft.EntityFrameworkCore.Design
+  dotnet add package Microsoft.EntityFrameworkCore.Tools
+  dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+  dotnet add package Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore
    ```
-  * Add Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore:
-  ```sh
-   dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.4
-  ```
+
 * Create a new folder: "Model". Now we move to create some models that we need!
 ##The Student entity
   
