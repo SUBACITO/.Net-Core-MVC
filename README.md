@@ -11,27 +11,10 @@
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Need to know!</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">Install dotnet ver 8.0, and i am making with visual studio code</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
+## Need to know before starting!
+I am working with dotnet 8.0 and using Visual studio code!
+## Let's go!
+* Using command line from Visual studio code to create your project
+  ```sh
+   dotnet new webapp
+   ```
