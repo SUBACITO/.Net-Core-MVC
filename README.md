@@ -40,7 +40,7 @@ I am working with dotnet 8.0 and using Visual studio code!
    dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.4
   ```
 * Create a new folder: "Model". Now we move to create some models that we need!
-<h3>The Student entity<h3>
+<h1>The Student entity<h1>
   
 ```sh
 using System;
