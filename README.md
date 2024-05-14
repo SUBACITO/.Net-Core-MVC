@@ -277,6 +277,8 @@ dotnet ef migrations add InitialCreate
 ```sh
 dotnet ef database update
 ```
+## More detail:
+<a href="https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/?view=aspnetcore-8.0">Visit now!</a>
 
 
 
