@@ -87,7 +87,7 @@ namespace ContosoUniversity.Data
     }
 }
 ```
-##Connection to SQL SERVER
+## Connection to SQL SERVER
 
 Open file program.cs, we need to add some configuration to make sure that's our connection is correct!
 This is a default file.
