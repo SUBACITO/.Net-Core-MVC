@@ -120,7 +120,7 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
-    builder.Services.AddDbContext<MvcMovieContext>(options =>
+    builder.Services.AddDbContext<SchoolContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 }
 ```
