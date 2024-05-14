@@ -280,6 +280,11 @@ dotnet ef database update
 ## More detail:
 <a href="https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/?view=aspnetcore-8.0">Visit now!</a>
 
+# Some code that u will surely need >< (trust me):
+```sh
+dotnet aspnet-codegenerator controller -name StudentsController -m Student -dc VY.Data.SchoolContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries --databaseProvider SqlServer -f (if already exist)
+```
+
 
 
  
