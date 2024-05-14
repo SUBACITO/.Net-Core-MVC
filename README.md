@@ -19,5 +19,9 @@ I am working with dotnet 8.0 and using Visual studio code!
   dotnet new mvc -o YourNameProject
   code -r YourNameProject
    ```
+* Trust the HTTPS development certificate by running the following command:
+  ```sh
+  dotnet dev-certs https --trust
+   ```
 * Create a new folder: "Model". Now we move to create some models that we need!
  
