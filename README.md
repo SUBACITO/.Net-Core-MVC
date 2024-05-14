@@ -27,9 +27,9 @@ I am working with dotnet 8.0 and using Visual studio code!
   ```sh
   dotnet nuget add source "https://api.nuget.org/v3/index.json" --name "nuget.org"
    ```
-Then:
- ```sh
-  dotnet tool install --global dotnet-aspnet-codegenerator
-   ```
+    Then:
+     ```sh
+      dotnet tool install --global dotnet-aspnet-codegenerator
+       ```
 * Create a new folder: "Model". Now we move to create some models that we need!
  
