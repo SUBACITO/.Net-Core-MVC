@@ -132,7 +132,7 @@ builder.Services.AddDbContext<SchoolContext>(options =>
 Open the appsettings.json file and add a connection string as shown in the following markup (i am using local, so i often use with '.'):
 ```sh
 "ConnectionStrings": {
-    "DefaultConnection": "Server=.;Database=ContosoUniversity1;Trusted_Connection=True;MultipleActiveResultSets=true"
+    "DefaultConnection": "Server=.;Database=ContosoUniversity1;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate"
   },
 ```
 ## Initialize DB with test data
