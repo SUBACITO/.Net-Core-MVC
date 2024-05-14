@@ -191,5 +191,19 @@ using (var scope = app.Services.CreateScope())
     }
 }
 ```
+## Create controller and views ```StudentsController```
+The Visual Studio scaffolding engine creates a StudentsController.cs file and a set of views (*.cshtml files) that work with the controller.
+```sh
+namespace ContosoUniversity.Controllers
+{
+    public class StudentsController : Controller
+    {
+        private readonly SchoolContext _context;
+
+        public StudentsController(SchoolContext context)
+        {
+            _context = context;
+        }
+```
 
  
