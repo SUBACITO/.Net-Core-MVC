@@ -45,6 +45,7 @@ I am working with dotnet 8.0 and using Visual studio code!
    ```
 
 * Create a new folder: "Model". Now we move to create some models that we need!
+  
 ##The Student entity
   
 ```sh
