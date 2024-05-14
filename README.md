@@ -77,5 +77,56 @@ namespace ContosoUniversity.Data
     }
 }
 ```
+<div><h1>Connection to SQL SERVER<h1></div>
+
+Open file program.cs, we need to add some configuration to make sure that's our connection is correct!
+This is a default file.
+```sh
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();
+
+```
+Now we add some new lines below ```var builder = WebApplication.CreateBuilder(args); ```.
+```sh
+if (builder.Environment.IsDevelopment())
+{
+    // builder.Services.AddDbContext<MvcMovieContext>(options =>
+    //     options.UseSqlite(builder.Configuration.GetConnectionString("MvcMovieContext")));
+     builder.Services.AddDbContext<MvcMovieContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("CacbuChaBa")));
+}
+else
+{
+    builder.Services.AddDbContext<MvcMovieContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("CacbuChaBa")));
+}
+
+```
+
 
  
