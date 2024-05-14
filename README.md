@@ -259,6 +259,12 @@ Then we create folder ```Students``` in folder ```Views```, and add file ```Inde
     </tbody>
 </table>
 ```
+We need to update ```_Layout.cshtml``` in Shared folder. Add new tag ```li``` for your new page (StudentPage)
+```sh
+ <li class="nav-item">
+    <a class="nav-link text-dark" asp-area="" asp-controller="Students" asp-action="Index">Students</a>
+ </li>
+```
 ## Add Migration for MVC.
 ```sh
   dotnet ef migrations add InitialCreate
