@@ -42,6 +42,7 @@ I am working with dotnet 8.0 and using Visual studio code!
   dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
   dotnet add package Microsoft.EntityFrameworkCore.SqlServer
   dotnet add package Microsoft.EntityFrameworkCore.Tools
+  dotnet add package Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore --version 8.0.5
    ```
 
 * Create a new folder: "Model". Now we move to create some models that we need!
