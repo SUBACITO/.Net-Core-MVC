@@ -136,7 +136,7 @@ Open the appsettings.json file and add a connection string as shown in the follo
   },
 ```
 ## Initialize DB with test data
-In the Data folder, create a new class named DbInitializer with the following code:
+In the Data folder, create a new class named ```DbInitializer``` with the following code:
 ```sh
 using ContosoUniversity.Models;
 using System;
