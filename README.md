@@ -116,16 +116,10 @@ app.Run();
 ```
 Now we add some new lines below ```var builder = WebApplication.CreateBuilder(args); ```.
 ```sh
-if (builder.Environment.IsDevelopment())
+builder.Services.AddDbContext<SchoolContext>(options =>
 {
-     builder.Services.AddDbContext<SchoolContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-}
-else
-{
-    builder.Services.AddDbContext<SchoolContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-}
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 ```
 Open the appsettings.json file and add a connection string as shown in the following markup (i am using local, so i often use with '.'):
 ```sh
