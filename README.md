@@ -40,7 +40,7 @@ I am working with dotnet 8.0 and using Visual studio code!
    dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.4
   ```
 * Create a new folder: "Model". Now we move to create some models that we need!
-<div><h1>The Student entity<h1></div>
+##The Student entity
   
 ```sh
 using System;
@@ -77,7 +77,7 @@ namespace ContosoUniversity.Data
     }
 }
 ```
-<div><h1>Connection to SQL SERVER<h1></div>
+##Connection to SQL SERVER
 
 Open file program.cs, we need to add some configuration to make sure that's our connection is correct!
 This is a default file.
@@ -130,6 +130,46 @@ Open the appsettings.json file and add a connection string as shown in the follo
     "MyTestConnection": "Server=.;Database=MovieDb;Integrated Security=True;TrustServerCertificate=true"
   },
 ```
+## Initialize DB with test data
+In the Data folder, create a new class named DbInitializer with the following code:
+```sh
+using ContosoUniversity.Models;
+using System;
+using System.Linq;
 
+namespace ContosoUniversity.Data
+{
+    public static class DbInitializer
+    {
+        public static void Initialize(SchoolContext context)
+        {
+            context.Database.EnsureCreated();
+
+            // Look for any students.
+            if (context.Students.Any())
+            {
+                return;   // DB has been seeded
+            }
+
+            var students = new Student[]
+            {
+            new Student{FirstMidName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2005-09-01")},
+            new Student{FirstMidName="Meredith",LastName="Alonso",EnrollmentDate=DateTime.Parse("2002-09-01")},
+            new Student{FirstMidName="Arturo",LastName="Anand",EnrollmentDate=DateTime.Parse("2003-09-01")},
+            new Student{FirstMidName="Gytis",LastName="Barzdukas",EnrollmentDate=DateTime.Parse("2002-09-01")},
+            new Student{FirstMidName="Yan",LastName="Li",EnrollmentDate=DateTime.Parse("2002-09-01")},
+            new Student{FirstMidName="Peggy",LastName="Justice",EnrollmentDate=DateTime.Parse("2001-09-01")},
+            new Student{FirstMidName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2003-09-01")},
+            new Student{FirstMidName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2005-09-01")}
+            };
+            foreach (Student s in students)
+            {
+                context.Students.Add(s);
+            }
+            context.SaveChanges();
+        }
+    }
+}
+```
 
  
