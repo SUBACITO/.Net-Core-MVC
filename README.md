@@ -13,10 +13,10 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Need to know!</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Install dotnet ver 8.0, and i am making with visual studio code</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
