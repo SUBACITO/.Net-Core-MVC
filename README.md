@@ -122,7 +122,7 @@ app.MapControllerRoute(
 app.Run();
 
 ```
-Now we add some new lines below ```var builder = WebApplication.CreateBuilder(args); ```.
+Now we add some new lines under ```var builder = WebApplication.CreateBuilder(args); ```.
 ```sh
 builder.Services.AddDbContext<SchoolContext>(options =>
 {
