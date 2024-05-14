@@ -115,17 +115,20 @@ Now we add some new lines below ```var builder = WebApplication.CreateBuilder(ar
 ```sh
 if (builder.Environment.IsDevelopment())
 {
-    // builder.Services.AddDbContext<SchoolContext>(options =>
-    //     options.UseSqlite(builder.Configuration.GetConnectionString("SchoolContext")));
      builder.Services.AddDbContext<SchoolContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("YourConnection")));
+        options.UseSqlServer(builder.Configuration.GetConnectionString("MyTestConnection")));
 }
 else
 {
     builder.Services.AddDbContext<MvcMovieContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("YourConnection")));
+        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 }
-
+```
+Open the appsettings.json file and add a connection string as shown in the following markup (i am using local, so i often use with '.'):
+```sh
+"ConnectionStrings": {
+    "MyTestConnection": "Server=.;Database=MovieDb;Integrated Security=True;TrustServerCertificate=true"
+  },
 ```
 
 
