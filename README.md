@@ -258,6 +258,14 @@ Then we create folder ```Students``` in folder ```Views```, and add file ```Inde
     </tbody>
 </table>
 ```
+## Add Migration for MVC.
+```sh
+  dotnet ef migrations add InitialCreate
+```
+```sh
+  dotnet ef database update
+```
+
 
 
  
